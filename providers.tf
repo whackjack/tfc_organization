@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "whackjack"
-    workspaces {
-      name = "tfc-organization"
-    }
-  }
+  # cloud {
+  #   organization = "whackjack-root"
+  #   workspaces {
+  #     name = "tfc-organization"
+  #   }
+  # }
 }
 
-provider "tfe" {}
+provider tfe {}
